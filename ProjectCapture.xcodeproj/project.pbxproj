@@ -16,6 +16,10 @@
 		C770EEBB1C1DE11C004A8908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C770EEB91C1DE11C004A8908 /* LaunchScreen.storyboard */; };
 		C770EEC61C1DE11C004A8908 /* ProjectCaptureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C770EEC51C1DE11C004A8908 /* ProjectCaptureTests.m */; };
 		C770EED11C1DE11C004A8908 /* ProjectCaptureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C770EED01C1DE11C004A8908 /* ProjectCaptureUITests.m */; };
+		C770EEE21C1DE329004A8908 /* CaptureEntry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C770EEDF1C1DE329004A8908 /* CaptureEntry+CoreDataProperties.m */; };
+		C770EEE31C1DE329004A8908 /* CaptureEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C770EEE11C1DE329004A8908 /* CaptureEntry.m */; };
+		C770EEE61C1DF2C4004A8908 /* CaptureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C770EEE51C1DF2C4004A8908 /* CaptureTableViewCell.m */; };
+		C770EEE91C1DF2F5004A8908 /* AddEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C770EEE81C1DF2F5004A8908 /* AddEntryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		C770EECC1C1DE11C004A8908 /* ProjectCaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectCaptureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C770EED01C1DE11C004A8908 /* ProjectCaptureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectCaptureUITests.m; sourceTree = "<group>"; };
 		C770EED21C1DE11C004A8908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C770EEDE1C1DE329004A8908 /* CaptureEntry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CaptureEntry+CoreDataProperties.h"; path = "../CaptureEntry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C770EEDF1C1DE329004A8908 /* CaptureEntry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CaptureEntry+CoreDataProperties.m"; path = "../CaptureEntry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C770EEE01C1DE329004A8908 /* CaptureEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaptureEntry.h; path = ../CaptureEntry.h; sourceTree = "<group>"; };
+		C770EEE11C1DE329004A8908 /* CaptureEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CaptureEntry.m; path = ../CaptureEntry.m; sourceTree = "<group>"; };
+		C770EEE41C1DF2C4004A8908 /* CaptureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureTableViewCell.h; sourceTree = "<group>"; };
+		C770EEE51C1DF2C4004A8908 /* CaptureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureTableViewCell.m; sourceTree = "<group>"; };
+		C770EEE71C1DF2F5004A8908 /* AddEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEntryViewController.h; sourceTree = "<group>"; };
+		C770EEE81C1DF2F5004A8908 /* AddEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEntryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +117,16 @@
 			children = (
 				C770EEAB1C1DE11C004A8908 /* AppDelegate.h */,
 				C770EEAC1C1DE11C004A8908 /* AppDelegate.m */,
+				C770EEDE1C1DE329004A8908 /* CaptureEntry+CoreDataProperties.h */,
+				C770EEDF1C1DE329004A8908 /* CaptureEntry+CoreDataProperties.m */,
+				C770EEE01C1DE329004A8908 /* CaptureEntry.h */,
+				C770EEE11C1DE329004A8908 /* CaptureEntry.m */,
 				C770EEAE1C1DE11C004A8908 /* ViewController.h */,
 				C770EEAF1C1DE11C004A8908 /* ViewController.m */,
+				C770EEE41C1DF2C4004A8908 /* CaptureTableViewCell.h */,
+				C770EEE51C1DF2C4004A8908 /* CaptureTableViewCell.m */,
+				C770EEE71C1DF2F5004A8908 /* AddEntryViewController.h */,
+				C770EEE81C1DF2F5004A8908 /* AddEntryViewController.m */,
 				C770EEB11C1DE11C004A8908 /* Main.storyboard */,
 				C770EEB71C1DE11C004A8908 /* Assets.xcassets */,
 				C770EEB91C1DE11C004A8908 /* LaunchScreen.storyboard */,
@@ -275,6 +295,10 @@
 			files = (
 				C770EEB01C1DE11C004A8908 /* ViewController.m in Sources */,
 				C770EEAD1C1DE11C004A8908 /* AppDelegate.m in Sources */,
+				C770EEE21C1DE329004A8908 /* CaptureEntry+CoreDataProperties.m in Sources */,
+				C770EEE61C1DF2C4004A8908 /* CaptureTableViewCell.m in Sources */,
+				C770EEE31C1DE329004A8908 /* CaptureEntry.m in Sources */,
+				C770EEE91C1DF2F5004A8908 /* AddEntryViewController.m in Sources */,
 				C770EEB61C1DE11C004A8908 /* ProjectCapture.xcdatamodeld in Sources */,
 				C770EEAA1C1DE11C004A8908 /* main.m in Sources */,
 			);
@@ -500,6 +524,7 @@
 				C770EED71C1DE11C004A8908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C770EED81C1DE11C004A8908 /* Build configuration list for PBXNativeTarget "ProjectCaptureTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +533,7 @@
 				C770EEDA1C1DE11C004A8908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C770EEDB1C1DE11C004A8908 /* Build configuration list for PBXNativeTarget "ProjectCaptureUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +542,7 @@
 				C770EEDD1C1DE11C004A8908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

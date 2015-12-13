@@ -13,6 +13,22 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//typedef enum {
+//    Terrible,
+//    Unsatisfied,
+//    Decent,
+//    Cool,
+//    Awesome
+//} CaptureRating;
+
+//enum captureRating {
+//    Not_Happy = 0,
+//    Not_Satisfied = 1,
+//    Decent = 2,
+//    Cool = 3,
+//    Awesome = 4
+//};
+
 @interface CaptureEntry (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSString *title;

@@ -7,16 +7,44 @@
 //
 
 #import "AddEntryViewController.h"
+#import "AppDelegate.h"         // Managed Object Context
+#import "CaptureEntry.h"        // Data file
 
 @interface AddEntryViewController ()
+
+@property (nonatomic, strong) AppDelegate            *appDelegate;
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cancelButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
+
+
 
 @end
 
 @implementation AddEntryViewController
 
+#pragma Mark - Interactivity Methods
+
+- (IBAction)cancelButtonPressed:(id)sender {
+    //[self.navigationController popViewControllerAnimated:true];
+    [self dismissViewControllerAnimated:true completion:nil];
+}
+
+- (IBAction)doneButtonPressed:(id)sender {
+    [self dismissViewControllerAnimated:true completion:nil];
+}
+
+
+#pragma Mark - Life Cycle Methods
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // Initializing Appdelegate Control
+    _appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    _managedObjectContext = _appDelegate.managedObjectContext;   // allows appDelegate to run managedObjectontext
 }
 
 - (void)didReceiveMemoryWarning {
